@@ -76,7 +76,8 @@ if __name__ == "__main__":
     print('-------------------------------------------')
     DoSimpleQuery(model, query)
     
-    pages = DoLoad("./02-rag/경남교육청_수목관리_업무매뉴얼.pdf")
+    #pages = DoLoad("./02-rag/경남교육청_수목관리_업무매뉴얼.pdf")
+    pages = DoLoad("./02-rag/manual.pdf")
     pages[0].page_content
     vectorstore, docs1 = DoEmbedding(pages)
 
